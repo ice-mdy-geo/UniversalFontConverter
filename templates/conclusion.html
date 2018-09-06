@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <style type="text/css">
+      #foot{
+        background-color: #000000;
+      }
+
+    </style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Languages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url_for('ztou') }}">ZawGyi to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('ztow') }}">ZawGyi to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtou') }}">Win to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtoz') }}">Win to ZawGyi</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utow') }}">Uni to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utoz') }}">Uni to ZawGyi</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+ <br> <br>
+
+<div class="container">
+  <h2>ICE-Mdy-GEO</h2>
+  <p>We are Final Year Students at CU(MDY) doing intership program.We are part of @ice-mdy-geo team.</p>
+  <img src="../static/images/cu.png" style="width: 350px;">
+  <br>
+	<h3 style="padding-left: 30px;">Evaluation and Conclusion</h3>
+	<ul>
+		<li>In this project, we presented word segmentation program for Myanmar text based on World Wide Web.</li>
+		<li>Then, we presented both word level and character level by this program.</li>
+		<li>The program performed segmentation work well and proved itself to be used as a pratical word.</li>
+		<li>For future task, we plan to extend our program by converting all possible 
+		Myanmar words.</li>
+		<li>It is hope that this project will give benefits for our Myanmar language development tasks.</li>
+	</ul>
+</div>
+<br><br>
+
+<div id="foot">
+  <footer>
+    <div class="footer-copyright">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4"> © 2018 InternShip Program:</a>
+            <a class="grey-text text-lighten-4" style="float: right;" href="https://translate.google.com/m/translate">More Links</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+</body>
+</html>
