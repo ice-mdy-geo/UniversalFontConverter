@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <style type="text/css">
+      #foot{
+        background-color: #000000;
+      }
+
+    </style>
+
+
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Languages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url_for('ztou') }}">ZawGyi to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('ztow') }}">ZawGyi to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtou') }}">Win to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtoz') }}">Win to ZawGyi</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utow') }}">Uni to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utoz') }}">Uni to ZawGyi</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+ <br> <br>
+
+
+
+<h style="font-size: 25px;">What is Unicode?</h>
+
+<p style="font-size: 18px;">Unicode is the language of many of the technical equipment to be displayed together in a
+systematic specify criteria to follow. Unicode standard salt and scholars gathered systematically,
+tracking has become a fixed part of Unicode. Font Keyboard Input Method is not Unicode. Font users,
+Keyboard, creator all input system creators comply with the Unicode standard. It will comply with the
+machine, which was filmed in with any font types does not use false, without change is everywhere.
+Follow the terms of the Unicode standard fonts. There are several fonts. Myanmar3.ttf, Tharlon.ttf,
+Padauk-book.ttf, Pyidaungsu.ttf, Myanmar Cencus.ttf comply with the Unicode standard, we have a
+wide rage of font. The Unicode system keyboard Keymagic, Keyman, Myanmar-custom keyboard.
+</p><hr style="border-color: green;">
+
+<h style="font-size: 25px;">Why use Unicode Myanmar(font)?</h>
+<p style="font-size: 18px;">Unicode is a standard that defines how text should be saved into data and how it is read and written.
+Almost every script in the world, including Burmese, is defined in the Unicode Standard. Carefully
+designed by experts of the field around the world, this international standards is supported by virtually
+all the latest platforms—not only in major operating systems like Windows, Mac, and Linux but also in
+OSes of mobile phone and many electronic devices. The Unicode Standard is the most well-known
+encoding scheme to support the largest number of scripts/languages in a single page of code.</p><hr style="border-color: green;">
+
+<h style="font-size: 25px;">What is Zawgyi Myanmar(font)?</h>
+<p style="font-size: 18px;">Zawgyi is currently the most widely used solution for input in Myanmar-language websites, it is not
+Unicode-compliant and does not meet the standards set by the Unicode Standard. Also there are
+multiple ways of storing text, which makes search challenging.
+An online typewriter that supports Zawgyi as well as Unicode fonts is available at Burglish System tester.
+Those who have Zawgyi of pseudo-Unicode fonts in their computers find their computers may display
+incorrect text and might affect other Unicode-supported applications.</p><hr style="border-color: green;">
+
+<h style="font-size: 25px;">What is Win Myanmar(font)?</h>
+<p style="font-size: 18px;">Win Myanmar Systems, better known as Win Myanmar Fonts, translates MS Windows menus to
+Burmese. The Win Myanmar font system for Microsoft Windows is common in Myanmar for digitally
+processing Burmese script. The software supports both non-Unicode ASCII formats and ISO-compliant
+Unicode formats. They also include keyboard drivers for Windows.</p><hr style="border-color: green;">
+
+<br><br>
+
+<div id="foot">
+  <footer>
+    <div class="footer-copyright">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4"> © 2018 InternShip Program:</a>
+            <a class="grey-text text-lighten-4" style="float: right;" href="https://translate.google.com/m/translate">More Links</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+</body>
+</html>
