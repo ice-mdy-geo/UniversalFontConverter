@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      
+    
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <style type="text/css">
+      #foot{
+        background-color: #000000;
+      }
+
+    </style>
+
+    </head>
+
+    <body>
+      
+
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Languages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url_for('ztou') }}">ZawGyi to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('ztow') }}">ZawGyi to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtou') }}">Win to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtoz') }}">Win to ZawGyi</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utow') }}">Uni to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utoz') }}">Uni to ZawGyi</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+ <br> <br>
+
+      <div class="container">
+  <h2>ICE-Mdy-GEO</h2>
+  <p>We are Final Year Students at CU(MDY) doing intership program.We are part of @ice-mdy-geo team.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Memember's Name</th>
+        <th>Memember's RollNo</th>
+        <th>Skills/Requirements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="danger">
+        <td>Ma Cherry Tun Kyaw</td>
+        <td>5CS-48</td>
+        <td>Team Lead and Dev 1</td>
+      </tr>      
+      <tr class="success">
+        <td>Ma Moe Eaindray Oo</td>
+        <td>5CS-49</td>
+        <td>Lead Developer + DevOps</td>
+      </tr>
+      <tr class="danger">
+        <td>Ma Lae Lae Win</td>
+        <td>5CS-44</td>
+        <td>UI/UX Lead</td>
+      </tr>
+      <tr class="info">
+        <td>Ma Phyu Zin Zaw</td>
+        <td>5CS-45</td>
+        <td>UI/UX Dev</td>
+      </tr>
+      <tr class="danger">
+        <td>Ma Lamin Moh Moh</td>
+        <td>5CS-46</td>
+        <td>Dev 2</td>
+      </tr>
+      <tr class="success">
+        <td>Ma Khin Yandar Thein</td>
+        <td>5CS-47</td>
+        <td>Text & Documentation</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br><br>
+      
+
+<div id="foot">
+  <footer>
+    <div class="footer-copyright">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4"> © 2018 InternShip Program:</a>
+            <a class="grey-text text-lighten-4" style="float: right;" href="https://translate.google.com/m/translate">More Links</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+  </html>
