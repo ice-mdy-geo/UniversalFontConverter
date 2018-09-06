@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      
+    
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+          <style type="text/css">
+      #foot{
+        background-color: #000000;
+      }
+
+    </style>
+
+    </head>
+
+    <body>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Languages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url_for('ztou') }}">ZawGyi to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('ztow') }}">ZawGyi to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtou') }}">Win to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtoz') }}">Win to ZawGyi</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utow') }}">Uni to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utoz') }}">Uni to ZawGyi</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+ <br> <br>
+
+  <div class="container">
+  <h2>ICE-Mdy-GEO</h2>
+  <p>We are Final Year Students at CU(MDY) doing intership program.We are part of @ice-mdy-geo team.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Team Roles</th>
+        <th></th>
+        <th>Skills/Requirements</th>
+      </tr>
+    </thead>
+        <tbody>
+      <tr class="danger">
+        <td>Team Lead</td>
+        <td></td>
+        <td><p>General Passion for all the technologies invovled in creating software. Specific skill and expertise in at least one role is a requirement and is also responsible for monitoring, reporting and proper and timely project execution</p></td>
+        </tr>
+        <tr class="success">
+          <td>Lead Developer + DevOps</td>
+          <td></td>
+          <td>Strongest programming and system administration skills in the group. Sometime the Team Lead can take this role if there is no one else to assign to</td>
+        </tr>
+        <tr class="danger">
+          <td>UI/UX Lead</td>
+          <td></td>
+          <td>Passtion for design and userability. Someone who can think like a normal user. In this program he/she must have skills in HTML/CSS/JS and must learn a few frameworks such as BootStrap, Material Design, Angular and so on. Use of graphics tools and mockup tools</td>
+        </tr>
+        <tr class="success">
+          <td>UI/UX Dev</td>
+          <td></td>
+          <td>Same as above</td>
+        </tr>
+         <tr class="danger">
+          <td>Dev 1</td>
+          <td></td>
+          <td>Good logical thinking skill. Confortable with writing and rewriting code and reading and learning from other devs code. Either dev one or two must write code for Unit Test as well</td>
+        </tr>
+        <tr class="success">
+          <td>Dev 2</td>
+          <td></td>
+          <td>Good logical thinking skill. Confortable with writing and rewriting code and reading and learning from other devs code.</td>
+        </tr>
+        <tr class="danger">
+          <td>Text & Documentation</td>
+          <td></td>
+          <td>Have clear and conciese writing skills. Understands the value of documention.</td>
+        </tr>
+        <tr class="success">
+          <td>NOTES:</td>
+          <td></td>
+          <td>Role details are currently being modified and updated and will adapt and change along the way.</td>
+        </tr>
+      </tbody>
+      </table>
+    </div>
+<br><br>
+
+
+    <div id="foot">
+  <footer>
+    <div class="footer-copyright">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4"> © 2018 Internship Program:</a>
+            <a class="grey-text text-lighten-4" style="float: right;" href="https://translate.google.com/m/translate">More Links</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
+    </html>
