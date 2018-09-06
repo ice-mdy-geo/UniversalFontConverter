@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script 
+         src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+      </script>
+      <link rel = "stylesheet" 
+         href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <link rel = "stylesheet" 
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="{{url_for('static', filename='js/wintouni.js')}}"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='js/font.js')}}"></script>
+
+
+  <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu' />
+
+    <style type="text/css">
+
+     @font-face {
+                font-family: 'win_innwaregular';
+                src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
+                  url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
+                  font-weight: normal;
+                  font-style: normal;
+                  font-size: 50px;
+              }
+
+      #foot{
+        background-color: #000000;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="{{ url_for('index') }}"><span class="glyphicon glyphicon-home">Home</span></a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Languages <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ url_for('ztou') }}">ZawGyi to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('ztow') }}">ZawGyi to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtou') }}">Win to Uni</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('wtoz') }}">Win to ZawGyi</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utow') }}">Uni to Win</a></li>
+          <li class="divider"></li>
+          <li><a href="{{ url_for('utoz') }}">Uni to ZawGyi</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+  
+<form>
+<main class = "mdl-layout__content">    
+  <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone"> 
+
+            <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class = "mdl-textfield__input" type = "text" rows =  "3" id = "myinput" style="width: 300px; height: 150px;background-color: #bbdefb;font-family: win_innwaregular;" >
+                  
+                </textarea>
+                     <label class = "mdl-textfield__label" for = "myinput">Win</label>
+             </div>
+
+    </div>
+  
+    
+<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+
+            <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <textarea class = "mdl-textfield__input" type = "text" rows =  "3" id = "output" style="width: 300px; height: 150px;background-color: #bbdefb;font-family:Pyidaungsu;" >
+                  
+                </textarea>
+                     <label class = "mdl-textfield__label" for = "output">Uni</label>
+             </div>
+
+
+  </div>
+  
+</div>
+         </main>
+    
+ <div class="container">
+  <button class="btn waves-effect waves-light btn-success" type="submit" name="action"><i class="material-icons left"></i>Convert
+  </button>
+
+    <input type="reset" name="clear" class="btn btn-danger" value="Clear">
+</div>
+</form>
+
+  <br><br>
+
+  <div id="foot">
+  <footer>
+    <div class="footer-copyright">
+            <div class="container"  style="height: 70px;">
+           <a class="grey-text text-lighten-4"> © 2018 Internship Program:</a>
+            <a class="grey-text text-lighten-4" style="float: right;" href="https://translate.google.com/m/translate">More Links</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+
+</body>
+</html>
